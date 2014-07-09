@@ -1,0 +1,23 @@
+public class P10 {
+
+	public static void main(String[] argv) {
+	int total = 2;
+	
+	for (int i=3;i<2000000;i++){
+		if (i%2==0){}
+		else if (isPrime(i)) {
+			total+=i;
+		}
+	}	
+	System.out.println(total);
+	}
+	
+	public static boolean isPrime(int i) {
+	
+		for (int j=2;j<i;j++) {
+			if (i%j==0) return false;
+		}
+		return true;
+		}
+
+}
